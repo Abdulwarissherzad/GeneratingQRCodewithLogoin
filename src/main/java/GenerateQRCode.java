@@ -8,7 +8,9 @@ import java.nio.file.Paths;
 public class GenerateQRCode {
  
     public static void main(String[] args) throws Exception {
-         
+        
+        /* Here we can change the name of the website that we want to generate QR code*/
+        
         String content = "Here Past the URL of the website you want to Generate QR code for it.";
         String pathToStore = "C:\\Users\\Abdul Waris Sherzad\\OneDrive\\Pictures\\QRCodeGenerated.jpg";
          
