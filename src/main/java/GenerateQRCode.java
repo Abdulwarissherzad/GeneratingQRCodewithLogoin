@@ -11,8 +11,8 @@ public class GenerateQRCode {
         
         /* Here we can change the name of the website that we want to generate QR code*/
         
-        String content = "Here Past the URL of the website you want to Generate QR code for it.";
-        String pathToStore = "C:\\Users\\Abdul Waris Sherzad\\OneDrive\\Pictures\\QRCodeGenerated.jpg";
+        String content = "https://www.qr-code-generator.com";
+        String pathToStore = "C:\\Users\\Abdul Waris Sherzad\\OneDrive\\Documents\\QRCodeGenerated.jpg";
          
         BitMatrix bitMatrix = new MultiFormatWriter().encode(content, BarcodeFormat.QR_CODE, 500, 500);
         MatrixToImageWriter.writeToPath(bitMatrix, "jpg", Paths.get(pathToStore));
